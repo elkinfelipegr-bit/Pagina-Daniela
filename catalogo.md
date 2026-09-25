@@ -13,3 +13,17 @@ Datos copiados de las capturas del catálogo de WhatsApp que envió la tienda. S
 | `img/set-chaleco-blanco.jpg` | Set blanco chaleco + pantalón (foto en tienda) | Por confirmar | Por confirmar | Sin datos en la captura |
 
 Condición general en las fotos del catálogo: **venta mayorista a partir de 12 unidades por referencia**.
+
+## Tanda 2
+
+| Foto | Producto | Tallas | Precio | Notas |
+|---|---|---|---|---|
+| `img/conjunto-arena.jpg` | Conjunto top cruzado + pantalón (arena) | Por confirmar | COP 150.000 | Categoría "Conjuntos" |
+| `img/conjunto-body-bordado.jpg` | Conjunto body bordado + pantalón cargo (beige) | Por confirmar | COP 150.000 | Body bordado o body liso, varios colores |
+| `img/conjunto-vino.jpg` | Conjunto top halter + pantalón (vino) | Por confirmar | COP 150.000 | Categoría "Conjuntos" |
+| `img/body-estraple.jpg` | Body estraple | Por confirmar | COP 70.000 | Blanco, café, rojo, negro, beige |
+| `img/body-seamless.jpg` | Body seamless (azul claro) | Por confirmar | COP 78.000 | |
+
+## Decisión
+
+Las prendas mayoristas van en el mismo catálogo, marcadas con la etiqueta "Por mayor · mín. 12 und." (opción B).
