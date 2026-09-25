@@ -22,7 +22,20 @@ Condición general en las fotos del catálogo: **venta mayorista a partir de 12 
 | `img/conjunto-body-bordado.jpg` | Conjunto body bordado + pantalón cargo (beige) | Por confirmar | COP 150.000 | Body bordado o body liso, varios colores |
 | `img/conjunto-vino.jpg` | Conjunto top halter + pantalón (vino) | Por confirmar | COP 150.000 | Categoría "Conjuntos" |
 | `img/body-estraple.jpg` | Body estraple | Por confirmar | COP 70.000 | Blanco, café, rojo, negro, beige |
-| `img/body-seamless.jpg` | Body seamless (azul claro) | Por confirmar | COP 78.000 | |
+| `img/body-seamless-azul.jpg` | Body seamless (azul claro) | Por confirmar | COP 78.000 | Ver tanda 3 para los demás colores |
+
+## Tanda 3 · Body seamless (COP 78.000, mismo producto en 6 colores)
+
+| Foto | Color |
+|---|---|
+| `img/body-seamless-azul.jpg` | Azul claro |
+| `img/body-seamless-rosa.jpg` | Rosa |
+| `img/body-seamless-negro.jpg` | Negro |
+| `img/body-seamless-cafe.jpg` | Café con ribete vino |
+| `img/body-seamless-gris.jpg` | Gris con ribete crema |
+| `img/body-seamless-negro-camel.jpg` | Negro con ribete camel |
+
+En la página va como un solo producto con selector de color que cambia la foto.
 
 ## Decisión
 
