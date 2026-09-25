@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Moda Exodo Boutique · Vestidos, jeans, blusas, bodys y sets. Cumaral, Meta. Ventas a todo el país.">
+<meta name="description" content="Moda Exodo Boutique · Conjuntos, bodys, blusas, pijamas y venta por mayor. Cumaral, Meta. Ventas a todo el país.">
 <style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>Exodo Boutique</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -150,7 +150,7 @@ header.site{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;backgrou
 .plp-banner b{font-family:var(--body);font-weight:900;font-size:clamp(22px,2.6vw,30px);color:var(--price-accent);text-transform:uppercase}
 .plp-banner b span{font-weight:900}
 .plp-banner a{color:var(--price-accent);text-decoration:underline;text-underline-offset:4px;font-weight:700;text-transform:uppercase;font-size:14px}
-.chips{display:flex;gap:14px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none;justify-content:center}
+.chips{display:flex;gap:14px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none;justify-content:flex-start}
 .chips::-webkit-scrollbar{display:none}
 .chip{flex:none;min-width:130px;padding:10px 18px;border:1.5px solid #222;border-radius:3px;font-weight:700;font-size:14px;background:#fff}
 .chip[aria-pressed="true"]{background:#000;color:#fff;border-color:#000}
@@ -265,6 +265,27 @@ body.open .drawer{transform:none}
 .total{display:flex;justify-content:space-between;font-weight:900;font-size:18px}
 .drawer .btn{text-align:center;padding-block:14px}
 .drawer .note{margin:0;font-size:12px;color:var(--muted)}
+.may{position:absolute;left:0;right:0;bottom:0;background:rgba(94,11,36,.92);color:#fff;font-family:var(--head);font-weight:800;font-size:11px;letter-spacing:.06em;text-transform:uppercase;padding:7px 10px;text-align:center}
+.card .price.ask{font-size:16px;color:var(--wine)}
+.cardsw{display:flex;gap:6px;padding:8px 6px 0;flex-wrap:wrap}
+.csw{width:18px;height:18px;border-radius:50%;border:1px solid rgba(0,0,0,.25)}
+.csw:hover{outline:1.5px solid #111;outline-offset:2px}
+.qv button.sw{cursor:pointer}
+.qv .sw[aria-pressed="true"]{outline:2px solid #111;outline-offset:2px}
+.maybox{background:var(--blush);border-left:3px solid var(--wine);padding:10px 12px;font-size:14px}
+.maybox b{display:block;color:var(--wine);text-transform:uppercase;font-size:12px;letter-spacing:.08em}
+.qty{display:flex;align-items:center;gap:12px}
+.qty button{width:38px;height:38px;border:1.5px solid #222;border-radius:3px;font-size:20px;font-weight:700}
+.qty span{min-width:28px;text-align:center;font-weight:900;font-size:18px;font-variant-numeric:tabular-nums}
+.qty small{color:var(--muted)}
+.wholesale{background:var(--wine);color:#fff}
+.wholesale .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:28px;align-items:center;padding-block:34px}
+.wholesale h2{font-family:var(--head);font-weight:900;font-size:clamp(28px,3.4vw,44px);letter-spacing:-.02em;text-transform:uppercase;line-height:1}
+.wholesale p{margin:10px 0 0;max-width:52ch;color:#F3DDE3}
+.wholesale ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-weight:700}
+.wholesale ul span{font-weight:900;font-variant-numeric:tabular-nums}
+.wholesale .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+@media (max-width:760px){.wholesale .wrap{grid-template-columns:1fr}}
 /* botones flotantes de atención */
 .fabs{position:fixed;right:16px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:35;display:grid;gap:12px;justify-items:end}
 .fab{display:flex;align-items:center;gap:10px;height:54px;padding:0 18px 0 14px;border-radius:999px;color:#fff;font-weight:900;font-size:14px;box-shadow:0 4px 16px rgba(0,0,0,.22);transition:transform .2s}
@@ -285,8 +306,8 @@ body.open .drawer{transform:none}
 <body>
 
 <div class="marquee" aria-label="Promociones"><div>
-  <span>BODYS DESDE $49.900</span><span>PEDIDOS POR WHATSAPP 311 859 1462</span><span>NUEVA DENIM COLLECTION</span><span>BOUTIQUE &amp; ALMACÉN · CUMARAL, META</span><span>BODYS DESDE $49.900</span><span>VENTAS A TODO EL PAÍS</span>
-  <span>BODYS DESDE $49.900</span><span>PEDIDOS POR WHATSAPP 311 859 1462</span><span>NUEVA DENIM COLLECTION</span><span>BOUTIQUE &amp; ALMACÉN · CUMARAL, META</span><span>BODYS DESDE $49.900</span><span>VENTAS A TODO EL PAÍS</span>
+  <span>PIJAMAS DESDE $18.000</span><span>BODY SEAMLESS $78.000 · 6 COLORES</span><span>CONJUNTOS $150.000</span><span>VENTA POR MAYOR DESDE 12 UNIDADES</span><span>PEDIDOS POR WHATSAPP 311 859 1462</span>
+  <span>PIJAMAS DESDE $18.000</span><span>BODY SEAMLESS $78.000 · 6 COLORES</span><span>CONJUNTOS $150.000</span><span>VENTA POR MAYOR DESDE 12 UNIDADES</span><span>PEDIDOS POR WHATSAPP 311 859 1462</span>
 </div></div>
 
 <header class="site">
@@ -294,11 +315,12 @@ body.open .drawer{transform:none}
     <button class="menu-btn" id="menu-btn" type="button" aria-label="Menú" aria-expanded="false"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
     <a class="logo" href="#top" aria-label="Exodo Boutique, inicio"><span class="eb">EB</span><span class="name"><b>EXODO</b>BOUTIQUE</span></a>
     <nav class="mainnav" aria-label="Categorías">
-      <a href="#catalogo" data-f="Vestidos">Vestidos</a>
-      <a href="#catalogo" data-f="Jeans">Jeans</a>
-      <a href="#catalogo" data-f="Blusas">Blusas</a>
+      <a href="#catalogo" data-f="Conjuntos">Conjuntos</a>
       <a href="#catalogo" data-f="Bodys">Bodys</a>
-      <a href="#catalogo" data-f="Sets">Sets</a>
+      <a href="#catalogo" data-f="Blusas">Blusas</a>
+      <a href="#catalogo" data-f="Pijamas">Pijamas</a>
+      <a href="#catalogo" data-f="Jeans">Jeans</a>
+      <a href="#por-mayor" style="color:var(--wine)">Por mayor</a>
     </nav>
     <div class="icons">
       <button type="button" id="search-btn" aria-label="Buscar"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg></button>
@@ -309,11 +331,15 @@ body.open .drawer{transform:none}
   <div class="wrap searchbar" id="searchbar" hidden><input id="q" type="search" placeholder="Busca vestidos, jeans, bodys..." aria-label="Buscar productos"></div>
   <nav class="wrap mobilenav" id="mobilenav" hidden aria-label="Menú móvil">
     <a href="#catalogo" data-f="Todo">Lo nuevo</a>
+    <a href="#catalogo" data-f="Bodys">Bodys</a>
+    <a href="#catalogo" data-f="Blusas">Blusas</a>
     <a href="#catalogo" data-f="Vestidos">Vestidos</a>
     <a href="#catalogo" data-f="Jeans">Jeans</a>
-    <a href="#catalogo" data-f="Blusas">Blusas</a>
-    <a href="#catalogo" data-f="Bodys">Bodys</a>
-    <a href="#catalogo" data-f="Sets">Sets</a>
+    <a href="#catalogo" data-f="Conjuntos">Conjuntos</a>
+    <a href="#catalogo" data-f="Pijamas">Pijamas</a>
+    <a href="#catalogo" data-f="Básicos">Básicos</a>
+    <a href="#catalogo" data-f="Niña">Niña</a>
+    <a href="#por-mayor">Venta por mayor</a>
     <a href="#tienda">Nuestra tienda</a>
   </nav>
 </header>
@@ -322,14 +348,14 @@ body.open .drawer{transform:none}
   <section class="hero" aria-label="Promociones destacadas">
     <div class="slides" id="slides">
       <div class="slide s1">
-        <img class="side l" src="img/body-licra.jpg" alt="">
-        <img class="side r" src="img/body-doble-tela.jpg" alt="">
+        <img class="side l" src="img/pijama-short-ositos.jpg" alt="">
+        <img class="side r" src="img/pijama-capri-dama.jpg" alt="">
         <div class="promo">
-          <div class="big l1">bodysweek</div>
+          <div class="big l1">pijamas</div>
           <div class="big l2">desde</div>
-          <div class="big l3">$49.900<small>c/u</small></div>
-          <div class="ctas"><a class="btn" href="#catalogo" data-f="Bodys">Ver bodys</a><a class="btn" href="#catalogo" data-f="Blusas">Ver blusas</a></div>
-          <div class="valid">Precios de referencia · hasta agotar existencias</div>
+          <div class="big l3">$18.000<small>c/u</small></div>
+          <div class="ctas"><a class="btn" href="#catalogo" data-f="Pijamas">Ver pijamas</a><a class="btn" href="#por-mayor">Venta por mayor</a></div>
+          <div class="valid">Precio por unidad · venta por mayor desde 12 unidades por referencia</div>
         </div>
       </div>
       <div class="slide s2">
@@ -342,11 +368,12 @@ body.open .drawer{transform:none}
         </div>
       </div>
       <div class="slide s3">
-        <div class="bgpics"><img src="img/vestido-halter-cafe.jpg" alt=""><img src="img/set-floral.jpg" alt=""><img src="img/set-blanco.jpg" alt=""><img src="img/vestido-degrade.jpg" alt=""></div>
+        <div class="bgpics"><img src="img/conjunto-arena.jpg" alt=""><img src="img/conjunto-vino.jpg" alt=""><img src="img/conjunto-body-bordado.jpg" alt=""><img src="img/set-chaleco-blanco.jpg" alt=""></div>
         <div class="promo">
-          <div class="big l1">NEW IN</div>
+          <div class="big l1">CONJUNTOS</div>
           <div class="big l2 script" style="font-family:var(--script);letter-spacing:0">Marca tu estilo</div>
-          <div class="ctas"><a class="btn light" href="#catalogo" data-f="Vestidos">Ver vestidos</a><a class="btn light" href="#catalogo" data-f="Sets">Ver sets</a></div>
+          <div class="big l3" style="font-size:clamp(46px,7vw,90px)">$150.000</div>
+          <div class="ctas"><a class="btn light" href="#catalogo" data-f="Conjuntos">Ver conjuntos</a></div>
         </div>
       </div>
     </div>
@@ -354,19 +381,12 @@ body.open .drawer{transform:none}
     <button class="harrow next" type="button" aria-label="Siguiente" data-d="1"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
     <div class="dots" id="dots"></div>
   </section>
-  <p class="fine">Precios y promociones de referencia para este borrador. Pedidos por WhatsApp +57 311 859 1462 o por mensaje directo en Instagram @moda.exodo.sport. Envíos a todo el país; el costo del envío depende de la ciudad de destino.</p>
+  <p class="fine">Precios tomados del catálogo de WhatsApp de la tienda; las prendas marcadas "Consultar precio" se cotizan por chat. Pedidos por WhatsApp +57 311 859 1462 o por mensaje directo en Instagram @moda.exodo.sport. Envíos a todo el país; el costo del envío depende de la ciudad de destino.</p>
 
   <section class="newdrop">
     <div class="wrap">
-      <h2>NEW IN <b>MODA EXODO BOUTIQUE</b></h2>
-      <div class="strip">
-        <a href="#catalogo" data-f="Blusas"><img src="img/blusa-celestial.jpg" alt="Blusa Celestial"></a>
-        <a href="#catalogo" data-f="Blusas"><img src="img/blusa-sahara.jpg" alt="Blusa Sahara"></a>
-        <a href="#catalogo" data-f="Bodys"><img src="img/body-manga-larga.jpg" alt="Body manga larga"><span class="btn">Ver bodys</span></a>
-        <a href="#catalogo" data-f="Vestidos"><img src="img/vestido-straple.jpg" alt="Vestido straple"><span class="btn">Ver vestidos</span></a>
-        <a href="#catalogo" data-f="Bodys"><img src="img/body-licra.jpg" alt="Body licra con jeans"></a>
-        <a href="#catalogo" data-f="Bodys"><img src="img/body-doble-tela.jpg" alt="Body doble tela"></a>
-      </div>
+      <h2>NEW IN <b>BODY SEAMLESS</b> · $78.000 · 6 COLORES</h2>
+      <div class="strip"><a href="#catalogo" data-f="Bodys"><img src="img/body-seamless-rosa.jpg" alt="Body Seamless Rosa"><span class="btn">Rosa</span></a><a href="#catalogo" data-f="Bodys"><img src="img/body-seamless-azul.jpg" alt="Body Seamless Azul claro"><span class="btn">Azul claro</span></a><a href="#catalogo" data-f="Bodys"><img src="img/body-seamless-negro.jpg" alt="Body Seamless Negro"><span class="btn">Negro</span></a><a href="#catalogo" data-f="Bodys"><img src="img/body-seamless-cafe.jpg" alt="Body Seamless Café y vino"><span class="btn">Café y vino</span></a><a href="#catalogo" data-f="Bodys"><img src="img/body-seamless-gris.jpg" alt="Body Seamless Gris y crema"><span class="btn">Gris y crema</span></a><a href="#catalogo" data-f="Bodys"><img src="img/body-seamless-negro-camel.jpg" alt="Body Seamless Negro y camel"><span class="btn">Negro y camel</span></a></div>
     </div>
   </section>
 
@@ -374,10 +394,10 @@ body.open .drawer{transform:none}
     <div class="wrap"><h2 class="sec-title">Eleva tus looks con estilo</h2></div>
     <div class="campaign">
       <img src="img/set-blanco.jpg" alt=""><img src="img/vestido-degrade.jpg" alt=""><img src="img/tienda-entrada.jpg" alt=""><img src="img/set-floral.jpg" alt="">
-      <div class="tags">Vestidos · Sets · Jeans · Blusas</div>
+      <div class="tags">Conjuntos · Bodys · Blusas · Pijamas</div>
       <div class="over">
         <div class="t">Marca <span>tu</span> estilo</div>
-        <div class="ctas"><a class="btn" href="#catalogo" data-f="Vestidos">Ver vestidos</a><a class="btn" href="#catalogo" data-f="Sets">Ver sets</a></div>
+        <div class="ctas"><a class="btn" href="#catalogo" data-f="Conjuntos">Ver conjuntos</a><a class="btn" href="#catalogo" data-f="Vestidos">Ver vestidos</a></div>
       </div>
     </div>
   </section>
@@ -395,14 +415,31 @@ body.open .drawer{transform:none}
 
   <section class="sec">
     <div class="wrap halves">
-      <a href="#catalogo" data-f="Blusas"><img src="img/top-amarillo.jpg" alt="Top amarillo"><span class="cap">Everyday<br>Essentials</span><span class="btn">Ver más</span></a>
-      <a href="#catalogo" data-f="Vestidos"><img src="img/vestido-halter-cafe.jpg" alt="Vestido halter café"><span class="cap r"><b>NEW IN</b>VESTIDOS</span><span class="btn">Ver más</span></a>
+      <a href="#catalogo" data-f="Blusas"><img src="img/crop-top-manguita.jpg" alt="Crop top manguita"><span class="cap" style="color:#fff">Everyday<br>Essentials</span><span class="btn">Ver más</span></a>
+      <a href="#catalogo" data-f="Bodys"><img src="img/body-estraple.jpg" alt="Body estraple en varios colores"><span class="cap r"><b>BODY</b>ESTRAPLE · $70.000</span><span class="btn">Ver más</span></a>
+    </div>
+  </section>
+
+  <section class="wholesale" id="por-mayor">
+    <div class="wrap">
+      <div>
+        <h2>Venta por mayor</h2>
+        <p>Surte tu negocio con básicos, pijamas y cacheteros en algodón licrado, tela Pat Primo. Mínimo 12 unidades por referencia, en docena surtida de colores.</p>
+        <div class="ctas"><a class="btn light" href="#catalogo" data-f="Por mayor">Ver productos por mayor</a><a class="btn wa" href="https://wa.me/573118591462?text=Hola%2C%20quiero%20cotizar%20al%20por%20mayor" target="_blank" rel="noopener">Cotizar por WhatsApp</a></div>
+      </div>
+      <ul>
+        <li>Básica de tiras dama · <span>$7.000</span> c/u</li>
+        <li>Top y cachetero niña · <span>$8.000</span> c/u</li>
+        <li>Camiseta manga dama · <span>$10.000</span> c/u</li>
+        <li>Top y cachetero dama · <span>$12.000</span> c/u</li>
+        <li>Pijamas dama · desde <span>$18.000</span> c/u</li>
+      </ul>
     </div>
   </section>
 
   <section class="sec" id="catalogo" style="padding-top:48px">
     <div class="wrap">
-      <div class="plp-banner"><b>Bodys desde: <span>$49.900</span></b><a href="#catalogo" data-f="Bodys">Ver bodys</a><a href="#catalogo" data-f="Jeans">Ver jeans</a></div>
+      <div class="plp-banner"><b>Básicos desde: <span>$7.000</span></b><a href="#catalogo" data-f="Básicos">Ver básicos</a><a href="#catalogo" data-f="Pijamas">Ver pijamas</a></div>
       <div class="chips" id="chips" role="group" aria-label="Filtrar por categoría"></div>
       <div class="plp-head">
         <span class="count" id="count">0 Productos</span>
@@ -465,12 +502,12 @@ body.open .drawer{transform:none}
   <div class="wrap">
     <h3>Búsquedas en tendencia</h3>
     <ul>
-      <li><a href="#catalogo" data-f="Jeans">Jean rígido palazzo</a></li>
-      <li><a href="#catalogo" data-f="Jeans">Jeans acampanados</a></li>
-      <li><a href="#catalogo" data-f="Bodys">Bodys ajuste perfecto</a></li>
-      <li><a href="#catalogo" data-f="Blusas">Blusas halter</a></li>
-      <li><a href="#catalogo" data-f="Vestidos">Vestido straple</a></li>
-      <li><a href="#catalogo" data-f="Sets">Sets de falda</a></li>
+      <li><a href="#catalogo" data-f="Bodys">Body seamless</a></li>
+      <li><a href="#catalogo" data-f="Pijamas">Pijamas dama</a></li>
+      <li><a href="#catalogo" data-f="Conjuntos">Conjuntos</a></li>
+      <li><a href="#catalogo" data-f="Por mayor">Básicos por mayor</a></li>
+      <li><a href="#catalogo" data-f="Niña">Ropa niña</a></li>
+      <li><a href="#catalogo" data-f="Jeans">Jeans palazzo</a></li>
     </ul>
   </div>
 </section>
@@ -481,10 +518,10 @@ body.open .drawer{transform:none}
       <div><a class="logo" href="#top"><span class="eb" style="font-size:34px">EB</span><span class="name"><b>EXODO</b>BOUTIQUE</span></a></div>
       <div><h4>Acerca de Exodo</h4><ul><li><a href="#tienda">Nuestra tienda</a></li><li>Términos y condiciones</li><li>Formas de pago</li><li><a href="https://bio.site/moda.exodosport" target="_blank" rel="noopener">Compra aquí</a></li></ul></div>
       <div><h4>Información adicional</h4><ul><li>Cuidado de prendas</li><li>Guía de tallas</li><li><a href="https://wa.me/573118591462" target="_blank" rel="noopener">WhatsApp +57 311 859 1462</a></li><li><a href="https://ig.me/m/moda.exodo.sport" target="_blank" rel="noopener">Instagram DM</a></li><li><a href="#tienda">Ubicaciones</a></li></ul></div>
-      <div><h4>Categorías</h4><ul><li><a href="#catalogo" data-f="Vestidos">Vestidos</a></li><li><a href="#catalogo" data-f="Jeans">Jeans</a></li><li><a href="#catalogo" data-f="Blusas">Blusas</a></li><li><a href="#catalogo" data-f="Sets">Sets</a></li></ul></div>
+      <div><h4>Categorías</h4><ul><li><a href="#catalogo" data-f="Conjuntos">Conjuntos</a></li><li><a href="#catalogo" data-f="Bodys">Bodys</a></li><li><a href="#catalogo" data-f="Pijamas">Pijamas</a></li><li><a href="#catalogo" data-f="Por mayor">Venta por mayor</a></li></ul></div>
     </div>
     <div class="pay"><b>Medios de pago</b><span>QR en tienda</span><span>Transferencia</span><span>Efectivo</span></div>
-    <p class="legal">Todos los derechos reservados Moda Exodo Sport 2026 · Cumaral, Meta · Borrador de diseño con precios de referencia</p>
+    <p class="legal">Todos los derechos reservados Moda Exodo Sport 2026 · Cumaral, Meta · Borrador de diseño</p>
   </div>
 </footer>
 
@@ -508,75 +545,104 @@ body.open .drawer{transform:none}
 
 <script>
 const WAICON=document.querySelector("#wa-cart svg").outerHTML;
-const COL={blanco:"#F7F5F0",verde:"#2F4B45",negro:"#151515",amarillo:"#F1E7A6",rojo:"#E23A4B",camel:"#C9A27E",arena:"#B8A898",azul:"#6E8FB5",cafe:"#6B4A36",rosa:"#C2185B"};
+const COL={blanco:"#F7F5F0",crema:"#EFE6D6",verde:"#2F4B45",petroleo:"#1F5A5E",negro:"#151515",amarillo:"#F1E7A6",rojo:"#E23A4B",camel:"#C9A27E",arena:"#B8A898",beige:"#E3D3BC",azul:"#6E8FB5",celeste:"#BFD3EE",cafe:"#6B4A36",vino:"#5A1E22",rosa:"#F2C4D0",fucsia:"#D81B60",lila:"#A99BE6",gris:"#9C9C9C",menta:"#CDEBE0",estampado:"linear-gradient(135deg,#F4E6F0 50%,#CDE3F2 50%)"};
+/* Catálogo real (WhatsApp Business). p = precio por unidad en COP; p:null = consultar.
+   may = venta mayorista (mínimo 12 unidades por referencia, docena surtida). */
 const P=[
-  {n:"Vestido straple licra doble",c:"Vestidos",p:89900,img:"vestido-straple",s:["S","M","L"],col:["rosa","negro"],fit:"Licra doble",nw:1,d:"Vestido corto straple en licra doble, se ajusta a tu figura."},
-  {n:"Blusa Celestial halter",c:"Blusas",p:59900,img:"blusa-celestial",s:["S","M","L"],col:["negro"],fit:"New in",nw:1,d:"Blusa tipo halter con amarre en cuello y espalda descubierta."},
-  {n:"Blusa Sahara halter",c:"Blusas",p:59900,img:"blusa-sahara",s:["S","M","L"],col:["arena"],fit:"New in",nw:1,d:"Blusa halter satinada en tono arena con amarre en la espalda."},
-  {n:"Body licra ajuste perfecto",c:"Bodys",p:49900,o:59900,img:"body-licra",s:["S","M","L"],col:["blanco","verde","negro","amarillo","rojo"],fit:"Ajuste perfecto",d:"Body en tela licra de tiras. Disponible en blanco, verde, negro, amarillo y rojo."},
-  {n:"Vestido largo degradé",c:"Vestidos",p:109900,img:"vestido-degrade",s:["S","M","L"],col:["cafe"],d:"Vestido largo halter con degradé de beige a café."},
-  {n:"Body manga larga velo + licra + varilla",c:"Bodys",p:69900,img:"body-manga-larga",s:["S/M"],col:["negro"],fit:"Talla única",d:"Body de manga larga en velo, licra y varilla. Talla única S/M."},
-  {n:"Set floral falda y top",c:"Sets",p:129900,img:"set-floral",s:["S","M","L"],col:["camel"],nw:1,d:"Set de falda larga con volantes y top con recorte, estampado floral."},
-  {n:"Body doble tela licra escote drapeado",c:"Bodys",p:54900,img:"body-doble-tela",s:["S","M","L"],col:["blanco","camel","rojo"],fit:"Doble tela",d:"Body en doble tela licra con escote drapeado. Blanco, camel y rojo."},
-  {n:"Jean rígido fit palazzo",c:"Jeans",p:119900,img:"jeans-tienda",s:["6","8","10","12"],col:["azul"],fit:"Palazzo Fit",d:"Jean rígido de bota ancha, tiro alto. Tallas 6, 8, 10 y 12."},
-  {n:"Set blanco falda con abertura",c:"Sets",p:119900,o:139900,img:"set-blanco",s:["S","M","L"],col:["blanco"],d:"Set de falda larga con abertura y top anudado al frente."},
-  {n:"Body tela rib correas ajustables",c:"Bodys",p:49900,img:"body-rib",s:["S","M","L"],col:["blanco","negro"],fit:"Tela rib",d:"Body en tela rib con cuello polo y correas ajustables."},
-  {n:"Jeans acampanados fit skinny",c:"Jeans",p:124900,img:"jean-outfit",s:["10","12","14"],col:["azul"],fit:"Flare Fit",d:"Jean acampanado, fit skinny hasta la rodilla. Tallas 10, 12 y 14."},
-  {n:"Vestido halter con volantes",c:"Vestidos",p:99900,o:119900,img:"vestido-halter-cafe",s:["S","M","L"],col:["cafe"],d:"Vestido corto halter con falda de volantes."},
-  {n:"Top strapless",c:"Blusas",p:39900,img:"top-strapless",s:["S","M"],col:["arena","negro"],d:"Top strapless ajustado para combinar con jeans o faldas."}
+  {n:"Body Seamless",c:"Bodys",p:78000,img:"body-seamless-rosa",s:["S","M","L"],fit:"Seamless",nw:1,
+   col:{rosa:"body-seamless-rosa",celeste:"body-seamless-azul",negro:"body-seamless-negro",vino:"body-seamless-cafe",gris:"body-seamless-gris",camel:"body-seamless-negro-camel"},
+   names:{rosa:"rosa",celeste:"azul claro",negro:"negro",vino:"café con ribete vino",gris:"gris con ribete crema",camel:"negro con ribete camel"},
+   d:"Body sin costuras en tejido acanalado, cuello alto sin mangas. Seis colores."},
+  {n:"Conjunto top cruzado y pantalón",c:"Conjuntos",p:150000,img:"conjunto-arena",s:["S","M","L"],col:{arena:"conjunto-arena"},nw:1,d:"Conjunto de top cruzado con escote en V y pantalón de bota recta, tono arena."},
+  {n:"Conjunto halter y pantalón",c:"Conjuntos",p:150000,img:"conjunto-vino",s:["S","M","L"],col:{vino:"conjunto-vino"},nw:1,d:"Top halter con amarre y pantalón bota ancha en tono vino."},
+  {n:"Conjunto body bordado y cargo",c:"Conjuntos",p:150000,img:"conjunto-body-bordado",s:["S","M","L"],col:{beige:"conjunto-body-bordado"},d:"Body bordado manga larga (también en body liso) con pantalón cargo. Pregunta por colores disponibles."},
+  {n:"Body estraple",c:"Bodys",p:70000,img:"body-estraple",s:["S","M","L"],fit:"Estraple",col:{blanco:"body-estraple",cafe:"body-estraple",rojo:"body-estraple",negro:"body-estraple",beige:"body-estraple"},d:"Body sin tiras con costuras de corsé. Blanco, café, rojo, negro y beige."},
+  {n:"Crop top manguita escote profundo",c:"Blusas",p:30000,img:"crop-top-manguita",s:["SM","L"],fit:"Crop top",col:{crema:"crop-top-manguita"},d:"Crop top de manga corta con escote profundo en la espalda."},
+  {n:"Pijama short dama ositos",c:"Pijamas",p:18000,o:30000,img:"pijama-short-ositos",s:["XL","XXL"],may:6,col:{estampado:"pijama-short-ositos"},d:"Pijama de tiras con short, estampado de ositos. Algodón licrado, tela Pat Primo."},
+  {n:"Pijama capri dama",c:"Pijamas",p:18000,o:35000,img:"pijama-capri-dama",s:["M","L","XL","XXL"],may:6,col:{estampado:"pijama-capri-dama"},d:"Pijama de tiras con pantalón capri estampado. Algodón licrado, tela Pat Primo."},
+  {n:"Pijama short dama",c:"Pijamas",p:30000,img:"pijama-short-menta",s:["S","M","L"],may:4,col:{menta:"pijama-short-menta"},d:"Pijama de tiras con short estampado. Algodón licrado, tela Pat Primo."},
+  {n:"Camiseta manga dama",c:"Básicos",p:10000,o:20000,img:"camiseta-manga-dama",s:["M","L","XL"],may:6,col:{fucsia:"camiseta-manga-dama"},d:"Camiseta básica de manga corta. Algodón licrado, tela Pat Primo."},
+  {n:"Básica de tiras dama",c:"Básicos",p:7000,o:12000,img:"basica-tiras-dama",s:["S","M","L","XL","XXL"],may:4,col:{petroleo:"basica-tiras-dama"},d:"Camiseta básica de tiras. Algodón licrado, tela Pat Primo."},
+  {n:"Top y cachetero dama",c:"Básicos",p:12000,img:"top-cachetero-dama",s:["S","M","L","XL"],may:4,col:{lila:"top-cachetero-dama"},d:"Top talla única o L y cachetero tallas S, M, L y XL. Precio del cachetero talla XL. Algodón licrado, tela Pat Primo."},
+  {n:"Top y cachetero niña",c:"Niña",p:8000,img:"top-cachetero-nina",s:["4","6","8","10","12","14"],may:4,col:{rojo:"top-cachetero-nina"},d:"Top talla única y cachetero estampado tallas 4 a 14. Precio del cachetero junior 10, 12 y 14. Algodón licrado, tela Pat Primo."},
+  {n:"Set chaleco y pantalón blanco",c:"Conjuntos",p:null,img:"set-chaleco-blanco",s:["S","M","L"],col:{blanco:"set-chaleco-blanco"},d:"Chaleco corto con botones y pantalón de bota recta en blanco."},
+  {n:"Blusa Celestial halter",c:"Blusas",p:null,img:"blusa-celestial",s:["S","M","L"],col:{negro:"blusa-celestial"},d:"Blusa tipo halter con amarre en cuello y espalda descubierta."},
+  {n:"Blusa Sahara halter",c:"Blusas",p:null,img:"blusa-sahara",s:["S","M","L"],col:{arena:"blusa-sahara"},d:"Blusa halter satinada en tono arena con amarre en la espalda."},
+  {n:"Vestido straple licra doble",c:"Vestidos",p:null,img:"vestido-straple",s:["S","M","L"],col:{fucsia:"vestido-straple"},d:"Vestido corto straple en licra doble."},
+  {n:"Vestido largo degradé",c:"Vestidos",p:null,img:"vestido-degrade",s:["S","M","L"],col:{cafe:"vestido-degrade"},d:"Vestido largo halter con degradé de beige a café."},
+  {n:"Jean rígido fit palazzo",c:"Jeans",p:null,img:"jeans-tienda",s:["6","8","10","12"],fit:"Palazzo Fit",col:{azul:"jeans-tienda"},d:"Jean rígido de bota ancha, tiro alto. Tallas 6, 8, 10 y 12."},
+  {n:"Jeans acampanados fit skinny",c:"Jeans",p:null,img:"jean-outfit",s:["10","12","14"],fit:"Flare Fit",col:{azul:"jean-outfit"},d:"Jean acampanado, fit skinny hasta la rodilla. Tallas 10, 12 y 14."},
+  {n:"Body manga larga velo",c:"Bodys",p:null,img:"body-manga-larga",s:["S/M"],fit:"Talla única",col:{negro:"body-manga-larga"},d:"Body de manga larga en velo, licra y varilla. Talla única S/M."}
 ];
+const MIN=12;
 const fmt=v=>"$ "+v.toLocaleString("es-CO");
+const priceTxt=p=>p.p==null?"Consultar precio":fmt(p.p);
 const WA="573118591462";
 const waLink=t=>`https://wa.me/${WA}?text=${encodeURIComponent(t)}`;
-const CH=["Todo","Vestidos","Jeans","Blusas","Bodys","Sets","Sale"];
+const CH=["Todo","Conjuntos","Bodys","Blusas","Pijamas","Básicos","Vestidos","Jeans","Niña","Por mayor","Sale"];
 const $=id=>document.getElementById(id);
 let filter="Todo",query="",sort="new",bag=[];
-try{bag=JSON.parse(localStorage.getItem("exodo-bag")||"[]")}catch(e){bag=[]}
+try{bag=JSON.parse(localStorage.getItem("exodo-bag-v2")||"[]")}catch(e){bag=[]}
 const eye='<svg width="30" height="22" viewBox="0 0 30 22" fill="none" stroke="#111" stroke-width="1.8"><ellipse cx="15" cy="11" rx="13" ry="9"/><circle cx="15" cy="11" r="4"/></svg>';
+const match=p=>filter==="Todo"||(filter==="Sale"?p.o:filter==="Por mayor"?p.may:p.c===filter);
 
 function renderGrid(){
-  $("chips").innerHTML=CH.map(c=>`<button class="chip" type="button" aria-pressed="${c===filter}" data-f="${c}">${c==="Todo"?"Todo":c}</button>`).join("");
+  $("chips").innerHTML=CH.map(c=>`<button class="chip" type="button" aria-pressed="${c===filter}" data-f="${c}">${c}</button>`).join("");
   const q=query.trim().toLowerCase();
-  let list=P.map((p,i)=>({...p,i})).filter(p=>(filter==="Todo"||(filter==="Sale"?p.o:p.c===filter))&&(!q||(p.n+" "+p.c).toLowerCase().includes(q)));
-  if(sort==="asc")list.sort((a,b)=>a.p-b.p);
-  if(sort==="desc")list.sort((a,b)=>b.p-a.p);
+  let list=P.map((p,i)=>({...p,i})).filter(p=>match(p)&&(!q||(p.n+" "+p.c).toLowerCase().includes(q)));
+  const val=p=>p.p==null?Infinity:p.p;
+  if(sort==="asc")list.sort((a,b)=>val(a)-val(b));
+  if(sort==="desc")list.sort((a,b)=>(b.p||0)-(a.p||0));
   $("count").textContent=list.length+" Productos";
-  $("plp-title").textContent=filter==="Todo"?"Lo nuevo":filter+" Mujer";
-  $("grid").innerHTML=list.length?list.map(p=>`
+  $("plp-title").textContent=filter==="Todo"?"Lo nuevo":filter==="Por mayor"?"Venta por mayor":filter;
+  $("grid").innerHTML=list.length?list.map(p=>{const cols=Object.keys(p.col);return `
     <article class="card">
       <div class="pic" data-qv="${p.i}" role="button" tabindex="0" aria-label="Ver ${p.n}">
-        <img src="img/${p.img}.jpg" alt="${p.n}" loading="lazy">
+        <img src="img/${p.img}.jpg" alt="${p.n}" loading="lazy" id="im-${p.i}">
         ${p.o?`<span class="flag">-${Math.round((1-p.p/p.o)*100)}%</span>`:p.nw?`<span class="flag">Nuevo</span>`:""}
+        ${p.may?`<span class="may">Por mayor · mín. ${MIN} und.</span>`:""}
       </div>
       <div class="row">
-        <div>${p.fit?`<span class="fit">${p.fit}</span>`:""}<span class="price${p.o?" off":""}">${fmt(p.p)}${p.o?`<s>${fmt(p.o)}</s>`:""}</span></div>
+        <div>${p.fit?`<span class="fit">${p.fit}</span>`:""}<span class="price${p.o?" off":""}${p.p==null?" ask":""}">${priceTxt(p)}${p.o?`<s>${fmt(p.o)}</s>`:""}</span></div>
         <button class="eye" type="button" data-qv="${p.i}" aria-label="Vista rápida de ${p.n}">${eye}</button>
       </div>
       <div class="name">${p.n}</div>
-    </article>`).join(""):`<p style="grid-column:1/-1;color:var(--muted)">No encontramos prendas para “${query}”.</p>`;
+      ${cols.length>1?`<div class="cardsw">${cols.map(c=>`<button type="button" class="csw" title="${(p.names||{})[c]||c}" aria-label="Color ${(p.names||{})[c]||c}" data-p="${p.i}" data-c="${c}" style="background:${COL[c]}"></button>`).join("")}</div>`:""}
+    </article>`}).join(""):`<p style="grid-column:1/-1;color:var(--muted)">No encontramos prendas para “${query}”.</p>`;
 }
-function openQV(i){
-  const p=P[i];let size=p.s.length===1?p.s[0]:null;
-  $("qv").innerHTML=`<img src="img/${p.img}.jpg" alt="${p.n}"><div class="body">
+function openQV(i,startColor){
+  const p=P[i],cols=Object.keys(p.col);
+  let size=p.s.length===1?p.s[0]:null,color=startColor||cols[0],qty=p.may?MIN:1;
+  const cname=c=>(p.names||{})[c]||c;
+  $("qv").innerHTML=`<img id="qv-img" src="img/${p.col[color]}.jpg" alt="${p.n}"><div class="body">
     <button class="close" type="button" data-close aria-label="Cerrar"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
-    <h3>${p.n}</h3><div class="price">${fmt(p.p)}${p.o?` <s style="font-size:16px;color:var(--muted);font-weight:400">${fmt(p.o)}</s>`:""}</div>
+    <h3>${p.n}</h3><div class="price">${priceTxt(p)}${p.o?` <s style="font-size:16px;color:var(--muted);font-weight:400">${fmt(p.o)}</s>`:""}${p.may&&p.p!=null?` <small style="font-size:13px;font-weight:400;color:var(--muted)">por unidad</small>`:""}</div>
+    ${p.may?`<div class="maybox"><b>Venta por mayor</b>Mínimo ${MIN} unidades por referencia. Docena surtida en colores, ${p.may} unidades por talla.</div>`:""}
     <p class="desc">${p.d}</p>
-    <span class="lab">Color</span><div class="opts">${p.col.map(c=>`<span class="sw" title="${c}" style="background:${COL[c]}"></span>`).join("")}</div>
+    <span class="lab">Color: <span id="qv-cn" style="text-transform:none;letter-spacing:0;font-weight:400">${cname(color)}</span></span><div class="opts">${cols.map(c=>`<button type="button" class="sw qsw" data-c="${c}" aria-pressed="${c===color}" aria-label="Color ${cname(c)}" style="background:${COL[c]}"></button>`).join("")}</div>
     <span class="lab">Talla</span><div class="opts">${p.s.map(s=>`<button class="sz" type="button" data-s="${s}" aria-pressed="${s===size}">${s}</button>`).join("")}</div>
-    <button class="btn" type="button" id="add">Agregar al carrito</button>
-    <a class="btn wa" id="qv-wa" href="${waLink(`Hola, quiero comprar: ${p.n} (${fmt(p.p)}). ¿Está disponible?`)}" target="_blank" rel="noopener">${WAICON}Comprar ya por WhatsApp</a></div>`;
+    ${p.may?`<span class="lab">Cantidad</span><div class="qty"><button type="button" id="q-" aria-label="Menos">−</button><span id="qn">${qty}</span><button type="button" id="q+" aria-label="Más">+</button><small>unidades</small></div>`:""}
+    ${p.p!=null?`<button class="btn" type="button" id="add">Agregar al carrito</button>`:""}
+    <a class="btn wa" id="qv-wa" href="#" target="_blank" rel="noopener">${WAICON}${p.p==null?"Consultar por WhatsApp":p.may?"Cotizar por WhatsApp":"Comprar ya por WhatsApp"}</a></div>`;
   document.body.classList.add("modal");
-  const setWa=()=>{$("qv-wa").href=waLink(`Hola, quiero comprar: ${p.n}${size?` talla ${size}`:""} (${fmt(p.p)}). ¿Está disponible?`)};setWa();
+  const setWa=()=>{
+    const bits=[p.n,`color ${cname(color)}`,size?`talla ${size}`:null,p.may?`${qty} unidades`:null].filter(Boolean).join(", ");
+    $("qv-wa").href=waLink(p.p==null?`Hola, quiero saber el precio y disponibilidad de: ${bits}.`:p.may?`Hola, quiero cotizar al por mayor: ${bits} (${fmt(p.p)} c/u). ¿Está disponible?`:`Hola, quiero comprar: ${bits} (${fmt(p.p)}). ¿Está disponible?`);
+  };setWa();
   $("qv").querySelectorAll(".sz").forEach(b=>b.onclick=()=>{size=b.dataset.s;$("qv").querySelectorAll(".sz").forEach(x=>x.setAttribute("aria-pressed",x===b));setWa()});
-  $("add").onclick=()=>{if(!size){say("Elige una talla");return}bag.push({i,s:size});renderBag();document.body.classList.remove("modal");say(`${p.n} (talla ${size}) agregado al carrito`)};
+  $("qv").querySelectorAll(".qsw").forEach(b=>b.onclick=()=>{color=b.dataset.c;$("qv-img").src=`img/${p.col[color]}.jpg`;$("qv-cn").textContent=cname(color);$("qv").querySelectorAll(".qsw").forEach(x=>x.setAttribute("aria-pressed",x===b));setWa()});
+  if(p.may){$("q-").onclick=()=>{qty=Math.max(MIN,qty-1);$("qn").textContent=qty;setWa()};$("q+").onclick=()=>{qty++;$("qn").textContent=qty;setWa()};}
+  if($("add"))$("add").onclick=()=>{if(!size){say("Elige una talla");return}bag.push({i,s:size,c:color,q:qty});renderBag();document.body.classList.remove("modal");say(`${p.n} (talla ${size}) agregado al carrito`)};
 }
 function renderBag(){
-  $("bag-n").textContent=bag.length;
-  $("items").innerHTML=bag.length?bag.map((b,k)=>{const p=P[b.i];return `<div class="item"><img src="img/${p.img}.jpg" alt=""><div><b>${p.n}</b><small>Talla ${b.s}</small><small>${fmt(p.p)}</small></div><button class="rm" type="button" data-k="${k}">Quitar</button></div>`}).join(""):'<p class="empty">Tu carrito está vacío.</p>';
-  const tot=bag.reduce((a,b)=>a+P[b.i].p,0);
+  bag=bag.filter(b=>P[b.i]&&P[b.i].p!=null);
+  const cname=(p,c)=>(p.names||{})[c]||c;
+  $("bag-n").textContent=bag.reduce((a,b)=>a+(b.q||1),0);
+  $("items").innerHTML=bag.length?bag.map((b,k)=>{const p=P[b.i];return `<div class="item"><img src="img/${p.col[b.c]||p.img}.jpg" alt=""><div><b>${p.n}</b><small>Color ${cname(p,b.c)} · Talla ${b.s}</small><small>${b.q>1?`${b.q} und. × ${fmt(p.p)} = ${fmt(p.p*b.q)}`:fmt(p.p)}</small>${p.may?`<small style="color:var(--wine);font-weight:700">Por mayor</small>`:""}</div><button class="rm" type="button" data-k="${k}">Quitar</button></div>`}).join(""):'<p class="empty">Tu carrito está vacío.</p>';
+  const tot=bag.reduce((a,b)=>a+P[b.i].p*(b.q||1),0);
   $("total").textContent=fmt(tot);
-  $("wa-cart").href=bag.length?waLink("Hola, quiero hacer este pedido en Exodo Boutique:\n"+bag.map(b=>`• ${P[b.i].n}, talla ${b.s}: ${fmt(P[b.i].p)}`).join("\n")+`\nSubtotal: ${fmt(tot)}\n\nMi ciudad de envío es: `):waLink("Hola, quiero información sobre las prendas de Exodo Boutique.");
-  try{localStorage.setItem("exodo-bag",JSON.stringify(bag))}catch(e){}
+  $("wa-cart").href=bag.length?waLink("Hola, quiero hacer este pedido en Exodo Boutique:\n"+bag.map(b=>{const p=P[b.i];return `• ${p.n}, color ${cname(p,b.c)}, talla ${b.s}${b.q>1?`, ${b.q} und. × ${fmt(p.p)}`:""}: ${fmt(p.p*(b.q||1))}`}).join("\n")+`\nSubtotal: ${fmt(tot)}\n\nMi ciudad de envío es: `):waLink("Hola, quiero información sobre las prendas de Exodo Boutique.");
+  try{localStorage.setItem("exodo-bag-v2",JSON.stringify(bag))}catch(e){}
 }
 let tt;function say(m){const t=$("toast");t.textContent=m;t.classList.add("show");clearTimeout(tt);tt=setTimeout(()=>t.classList.remove("show"),2000)}
 function closeAll(){document.body.classList.remove("modal","open")}
@@ -591,6 +657,7 @@ go(0);auto();
 document.addEventListener("click",e=>{
   const f=e.target.closest("[data-f]");
   if(f){filter=f.dataset.f;query="";$("q").value="";renderGrid();$("mobilenav").hidden=true;}
+  const cs=e.target.closest(".csw");if(cs){const p=P[+cs.dataset.p];$("im-"+cs.dataset.p).src=`img/${p.col[cs.dataset.c]}.jpg`;return;}
   const q=e.target.closest("[data-qv]");if(q)openQV(+q.dataset.qv);
   if(e.target.closest("[data-close]"))closeAll();
   const rm=e.target.closest(".rm");if(rm){bag.splice(+rm.dataset.k,1);renderBag();}
