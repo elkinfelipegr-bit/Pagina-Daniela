@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Moda Exodo Boutique · Vestidos, jeans, blusas, bodys y sets. Cumaral, Meta. Ventas a todo el país.">
 <style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>Exodo Boutique</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -264,6 +265,19 @@ body.open .drawer{transform:none}
 .total{display:flex;justify-content:space-between;font-weight:900;font-size:18px}
 .drawer .btn{text-align:center;padding-block:14px}
 .drawer .note{margin:0;font-size:12px;color:var(--muted)}
+/* botones flotantes de atención */
+.fabs{position:fixed;right:16px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:35;display:grid;gap:12px;justify-items:end}
+.fab{display:flex;align-items:center;gap:10px;height:54px;padding:0 18px 0 14px;border-radius:999px;color:#fff;font-weight:900;font-size:14px;box-shadow:0 4px 16px rgba(0,0,0,.22);transition:transform .2s}
+.fab:hover{transform:translateY(-2px)}
+.fab.wa{background:#25D366}
+.fab.ig{background:linear-gradient(45deg,#F58529,#DD2A7B 55%,#8134AF);width:54px;padding:0;justify-content:center}
+.fab svg{flex:none}
+@media (max-width:600px){.fab.wa span{display:none}.fab.wa{width:54px;padding:0;justify-content:center}}
+.btn.wa{background:#1DA851}
+.btn.wa:hover{background:#178A43}
+.btn.wa svg,.btn.igb svg{vertical-align:-4px;margin-right:8px}
+.btn.igb{background:#fff;color:var(--ink);border:1.5px solid var(--ink)}
+.btn.igb:hover{background:var(--soft)}
 .toast{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom,0px));transform:translate(-50%,16px);opacity:0;background:#000;color:#fff;padding:12px 18px;border-radius:3px;font-weight:700;font-size:14px;transition:.25s;pointer-events:none;z-index:50;max-width:calc(100% - 32px)}
 .toast.show{opacity:1;transform:translate(-50%,0)}
 </style>
@@ -271,8 +285,8 @@ body.open .drawer{transform:none}
 <body>
 
 <div class="marquee" aria-label="Promociones"><div>
-  <span>BODYS DESDE $49.900</span><span>VENTAS A TODO EL PAÍS</span><span>NUEVA DENIM COLLECTION</span><span>BOUTIQUE &amp; ALMACÉN · CUMARAL, META</span><span>BODYS DESDE $49.900</span><span>VENTAS A TODO EL PAÍS</span>
-  <span>BODYS DESDE $49.900</span><span>VENTAS A TODO EL PAÍS</span><span>NUEVA DENIM COLLECTION</span><span>BOUTIQUE &amp; ALMACÉN · CUMARAL, META</span><span>BODYS DESDE $49.900</span><span>VENTAS A TODO EL PAÍS</span>
+  <span>BODYS DESDE $49.900</span><span>PEDIDOS POR WHATSAPP 311 859 1462</span><span>NUEVA DENIM COLLECTION</span><span>BOUTIQUE &amp; ALMACÉN · CUMARAL, META</span><span>BODYS DESDE $49.900</span><span>VENTAS A TODO EL PAÍS</span>
+  <span>BODYS DESDE $49.900</span><span>PEDIDOS POR WHATSAPP 311 859 1462</span><span>NUEVA DENIM COLLECTION</span><span>BOUTIQUE &amp; ALMACÉN · CUMARAL, META</span><span>BODYS DESDE $49.900</span><span>VENTAS A TODO EL PAÍS</span>
 </div></div>
 
 <header class="site">
@@ -340,7 +354,7 @@ body.open .drawer{transform:none}
     <button class="harrow next" type="button" aria-label="Siguiente" data-d="1"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
     <div class="dots" id="dots"></div>
   </section>
-  <p class="fine">Precios y promociones de referencia para este borrador. Pedidos por mensaje directo en Instagram @moda.exodo.sport. Envíos a todo el país; el costo del envío depende de la ciudad de destino.</p>
+  <p class="fine">Precios y promociones de referencia para este borrador. Pedidos por WhatsApp +57 311 859 1462 o por mensaje directo en Instagram @moda.exodo.sport. Envíos a todo el país; el costo del envío depende de la ciudad de destino.</p>
 
   <section class="newdrop">
     <div class="wrap">
@@ -421,8 +435,8 @@ body.open .drawer{transform:none}
     <div class="txt">
       <h2>Boutique &amp; Almacén</h2>
       <p>Visítanos en Cumaral, Meta, y pruébate la colección. Si estás en otra ciudad, te asesoramos por mensaje directo y te enviamos tu pedido.</p>
-      <ul><li>Cumaral, Meta, Colombia</li><li>Ventas a todo el país</li><li>Paga en tienda con QR</li></ul>
-      <div class="ctas"><a class="btn" href="https://www.google.com/maps/search/Moda+Exodo+Sport+Cumaral+Meta" target="_blank" rel="noopener">Cómo llegar</a><a class="btn pill" href="https://bio.site/moda.exodosport" target="_blank" rel="noopener">Compra aquí</a></div>
+      <ul><li>Cumaral, Meta, Colombia</li><li>WhatsApp +57 311 859 1462</li><li>Ventas a todo el país</li><li>Paga en tienda con QR</li></ul>
+      <div class="ctas"><a class="btn" href="https://www.google.com/maps/search/Moda+Exodo+Sport+Cumaral+Meta" target="_blank" rel="noopener">Cómo llegar</a><a class="btn wa" href="https://wa.me/573118591462?text=Hola%2C%20quiero%20informaci%C3%B3n%20de%20la%20tienda%20en%20Cumaral" target="_blank" rel="noopener">Escríbenos</a></div>
     </div>
   </section>
 
@@ -466,7 +480,7 @@ body.open .drawer{transform:none}
     <div class="cols">
       <div><a class="logo" href="#top"><span class="eb" style="font-size:34px">EB</span><span class="name"><b>EXODO</b>BOUTIQUE</span></a></div>
       <div><h4>Acerca de Exodo</h4><ul><li><a href="#tienda">Nuestra tienda</a></li><li>Términos y condiciones</li><li>Formas de pago</li><li><a href="https://bio.site/moda.exodosport" target="_blank" rel="noopener">Compra aquí</a></li></ul></div>
-      <div><h4>Información adicional</h4><ul><li>Cuidado de prendas</li><li>Guía de tallas</li><li><a href="https://ig.me/m/moda.exodo.sport" target="_blank" rel="noopener">Contáctanos</a></li><li><a href="#tienda">Ubicaciones</a></li></ul></div>
+      <div><h4>Información adicional</h4><ul><li>Cuidado de prendas</li><li>Guía de tallas</li><li><a href="https://wa.me/573118591462" target="_blank" rel="noopener">WhatsApp +57 311 859 1462</a></li><li><a href="https://ig.me/m/moda.exodo.sport" target="_blank" rel="noopener">Instagram DM</a></li><li><a href="#tienda">Ubicaciones</a></li></ul></div>
       <div><h4>Categorías</h4><ul><li><a href="#catalogo" data-f="Vestidos">Vestidos</a></li><li><a href="#catalogo" data-f="Jeans">Jeans</a></li><li><a href="#catalogo" data-f="Blusas">Blusas</a></li><li><a href="#catalogo" data-f="Sets">Sets</a></li></ul></div>
     </div>
     <div class="pay"><b>Medios de pago</b><span>QR en tienda</span><span>Transferencia</span><span>Efectivo</span></div>
@@ -481,13 +495,19 @@ body.open .drawer{transform:none}
   <div class="items" id="items"></div>
   <div class="bottom">
     <div class="total"><span>Subtotal</span><span id="total">$0</span></div>
-    <a class="btn" href="https://ig.me/m/moda.exodo.sport" target="_blank" rel="noopener">Pedir por Instagram</a>
-    <p class="note">Te confirmamos disponibilidad, envío y forma de pago por mensaje directo.</p>
+    <a class="btn wa" id="wa-cart" href="https://wa.me/573118591462" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Comprar por WhatsApp</a>
+    <a class="btn igb" href="https://ig.me/m/moda.exodo.sport" target="_blank" rel="noopener">Pedir por Instagram</a>
+    <p class="note">Tu pedido llega armado al chat con prendas, tallas y total. Te confirmamos disponibilidad, envío y forma de pago.</p>
   </div>
 </aside>
+<div class="fabs" aria-label="Atención al cliente">
+  <a class="fab ig" href="https://ig.me/m/moda.exodo.sport" target="_blank" rel="noopener" aria-label="Escríbenos por Instagram"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#fff" stroke="none"/></svg></a>
+  <a class="fab wa" id="wa-fab" href="https://wa.me/573118591462?text=Hola%2C%20quiero%20asesor%C3%ADa%20con%20una%20prenda%20de%20Exodo%20Boutique" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp"><svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg><span>¿Te asesoramos?</span></a>
+</div>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <script>
+const WAICON=document.querySelector("#wa-cart svg").outerHTML;
 const COL={blanco:"#F7F5F0",verde:"#2F4B45",negro:"#151515",amarillo:"#F1E7A6",rojo:"#E23A4B",camel:"#C9A27E",arena:"#B8A898",azul:"#6E8FB5",cafe:"#6B4A36",rosa:"#C2185B"};
 const P=[
   {n:"Vestido straple licra doble",c:"Vestidos",p:89900,img:"vestido-straple",s:["S","M","L"],col:["rosa","negro"],fit:"Licra doble",nw:1,d:"Vestido corto straple en licra doble, se ajusta a tu figura."},
@@ -506,6 +526,8 @@ const P=[
   {n:"Top strapless",c:"Blusas",p:39900,img:"top-strapless",s:["S","M"],col:["arena","negro"],d:"Top strapless ajustado para combinar con jeans o faldas."}
 ];
 const fmt=v=>"$ "+v.toLocaleString("es-CO");
+const WA="573118591462";
+const waLink=t=>`https://wa.me/${WA}?text=${encodeURIComponent(t)}`;
 const CH=["Todo","Vestidos","Jeans","Blusas","Bodys","Sets","Sale"];
 const $=id=>document.getElementById(id);
 let filter="Todo",query="",sort="new",bag=[];
@@ -541,15 +563,19 @@ function openQV(i){
     <p class="desc">${p.d}</p>
     <span class="lab">Color</span><div class="opts">${p.col.map(c=>`<span class="sw" title="${c}" style="background:${COL[c]}"></span>`).join("")}</div>
     <span class="lab">Talla</span><div class="opts">${p.s.map(s=>`<button class="sz" type="button" data-s="${s}" aria-pressed="${s===size}">${s}</button>`).join("")}</div>
-    <button class="btn" type="button" id="add">Agregar al carrito</button></div>`;
+    <button class="btn" type="button" id="add">Agregar al carrito</button>
+    <a class="btn wa" id="qv-wa" href="${waLink(`Hola, quiero comprar: ${p.n} (${fmt(p.p)}). ¿Está disponible?`)}" target="_blank" rel="noopener">${WAICON}Comprar ya por WhatsApp</a></div>`;
   document.body.classList.add("modal");
-  $("qv").querySelectorAll(".sz").forEach(b=>b.onclick=()=>{size=b.dataset.s;$("qv").querySelectorAll(".sz").forEach(x=>x.setAttribute("aria-pressed",x===b))});
+  const setWa=()=>{$("qv-wa").href=waLink(`Hola, quiero comprar: ${p.n}${size?` talla ${size}`:""} (${fmt(p.p)}). ¿Está disponible?`)};setWa();
+  $("qv").querySelectorAll(".sz").forEach(b=>b.onclick=()=>{size=b.dataset.s;$("qv").querySelectorAll(".sz").forEach(x=>x.setAttribute("aria-pressed",x===b));setWa()});
   $("add").onclick=()=>{if(!size){say("Elige una talla");return}bag.push({i,s:size});renderBag();document.body.classList.remove("modal");say(`${p.n} (talla ${size}) agregado al carrito`)};
 }
 function renderBag(){
   $("bag-n").textContent=bag.length;
   $("items").innerHTML=bag.length?bag.map((b,k)=>{const p=P[b.i];return `<div class="item"><img src="img/${p.img}.jpg" alt=""><div><b>${p.n}</b><small>Talla ${b.s}</small><small>${fmt(p.p)}</small></div><button class="rm" type="button" data-k="${k}">Quitar</button></div>`}).join(""):'<p class="empty">Tu carrito está vacío.</p>';
-  $("total").textContent=fmt(bag.reduce((a,b)=>a+P[b.i].p,0));
+  const tot=bag.reduce((a,b)=>a+P[b.i].p,0);
+  $("total").textContent=fmt(tot);
+  $("wa-cart").href=bag.length?waLink("Hola, quiero hacer este pedido en Exodo Boutique:\n"+bag.map(b=>`• ${P[b.i].n}, talla ${b.s}: ${fmt(P[b.i].p)}`).join("\n")+`\nSubtotal: ${fmt(tot)}\n\nMi ciudad de envío es: `):waLink("Hola, quiero información sobre las prendas de Exodo Boutique.");
   try{localStorage.setItem("exodo-bag",JSON.stringify(bag))}catch(e){}
 }
 let tt;function say(m){const t=$("toast");t.textContent=m;t.classList.add("show");clearTimeout(tt);tt=setTimeout(()=>t.classList.remove("show"),2000)}
