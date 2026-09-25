@@ -37,6 +37,17 @@ Condición general en las fotos del catálogo: **venta mayorista a partir de 12 
 
 En la página va como un solo producto con selector de color que cambia la foto.
 
+## Tanda 4
+
+| Foto | Producto | Tallas | Precio | Notas |
+|---|---|---|---|---|
+| `img/crop-top-manguita.jpg` | Crop top manguita, escote profundo (crema) | SM, L | COP 30.000 | |
+| `img/camiseta-manga-dama.jpg` | Camiseta manga dama (fucsia) | M L, XL | COP 10.000 (antes COP 20.000) | Algodón licrado Pat Primo. Docena surtida, 6 unidades por talla. Mayorista |
+| `img/basica-tiras-dama.jpg` | Básica de tiras dama (verde petróleo) | S M L, XL, XXL | COP 7.000 (antes COP 12.000) | Algodón licrado Pat Primo. Docena surtida, 4 unidades por talla. Mayorista |
+| `img/pijama-capri-dama.jpg` | Pijama capri dama (estampado) | M L, XL XXL | COP 18.000 (antes COP 35.000) | Algodón licrado Pat Primo. Docena surtida, 6 unidades por talla. Mayorista |
+
+La foto de Top niña + Cachetero niña se repitió (ya estaba en la tanda 1).
+
 ## Decisión
 
 Las prendas mayoristas van en el mismo catálogo, marcadas con la etiqueta "Por mayor · mín. 12 und." (opción B).
